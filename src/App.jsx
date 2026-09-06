@@ -135,14 +135,14 @@ minWidth: 0,
 borderRadius: "2px",
 cursor: "pointer",
 background: "#fff",
-border: "1px solid #d1d5db",
+border: "2px solid #d1d5db",
 boxShadow:
   isToday && isSelected
     ? "inset 0 0 0 4px #7c3aed"
     : isToday
     ? "inset 0 0 0 4px #ef4444"
     : isSelected
-    ? "inset 0 0 0 5px #000000"
+    ? "inset 0 0 0 3px #000000"
     : "none",
 }}
 >
