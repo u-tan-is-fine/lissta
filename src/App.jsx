@@ -142,7 +142,7 @@ outline:
     : isToday
     ? "2px solid #ef4444"
     : isSelected
-    ? "2px solid #000000"
+    ? "4px solid #000000"
     : "none",
 outlineOffset: "-1px",
 }}
