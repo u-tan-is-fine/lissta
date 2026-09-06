@@ -129,9 +129,9 @@ cells.push(
 key={day}
 onClick={() => setSelectedDate(dateString)}
 style={{
-aspectRatio: "1",
 minHeight: "80px",
-padding: "4px",
+padding: "2px",
+minWidth: 0,
 borderRadius: "8px",
 cursor: "pointer",
 background: "#fff",
@@ -343,7 +343,7 @@ fontSize: "12px",
 <div
 style={{
 display: "grid",
-gridTemplateColumns: "repeat(7, 1fr)",
+gridTemplateColumns: "repeat(7, minmax(0, 1fr))",
 gap: "8px",
 textAlign: "center",
 fontWeight: "bold",
@@ -362,7 +362,7 @@ marginBottom: "8px",
 <div
 style={{
 display: "grid",
-gridTemplateColumns: "repeat(7, 1fr)",
+gridTemplateColumns: "repeat(7, minmax(0, 1fr))",
 gap: "8px",
 }}
 >
