@@ -135,14 +135,16 @@ minWidth: 0,
 borderRadius: "2px",
 cursor: "pointer",
 background: "#fff",
-border:
- isToday && isSelected
- ? "2px solid #7c3aed"
- : isToday
- ? "2px solid #ef4444"
- : isSelected
- ? "2px solid #000000"
- : "1px solid #d1d5db",
+border: "1px solid #d1d5db",
+outline:
+  isToday && isSelected
+    ? "2px solid #7c3aed"
+    : isToday
+    ? "2px solid #ef4444"
+    : isSelected
+    ? "2px solid #000000"
+    : "none",
+outlineOffset: "-1px",
 }}
 >
 <div
