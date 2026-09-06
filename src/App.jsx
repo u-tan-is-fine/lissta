@@ -159,7 +159,7 @@ color: isToday ? "#dc2626" : "#000",
 <div
 key={song.id}
 style={{
-fontSize: "12px",
+fontSize: "16",
 background: "#dbeafe",
 borderRadius: "4px",
 padding: "2px 4px",
@@ -174,7 +174,7 @@ whiteSpace: "nowrap",
 ))}
 
 {daySongs.length > 4 && (
-<div style={{ fontSize: "12px", color: "#6b7280" }}>
+<div style={{ fontSize: "16", color: "#6b7280" }}>
 +{daySongs.length - 4}曲
 </div>
 )}
@@ -271,6 +271,7 @@ value={searchText}
 onChange={(e) => setSearchText(e.target.value)}
 style={{
 width: "100%",
+boxSizing: "border-box",
 padding: "10px",
 marginBottom: "16px",
 border: "1px solid #ddd",
@@ -307,7 +308,7 @@ cursor: "pointer",
 {song.artist}
 </div>
 
-<div style={{ fontSize: "12px" }}>
+<div style={{ fontSize: "16" }}>
 {song.date}
 </div>
 
@@ -326,7 +327,7 @@ style={{
 background: "#e5e7eb",
 borderRadius: "999px",
 padding: "2px 6px",
-fontSize: "12px",
+fontSize: "16",
 }}
 >
 #{tag}
@@ -394,7 +395,7 @@ padding: "8px 0",
 >
 <div>{song.title}</div>
 
-<div style={{ color: "#666", fontSize: "14px" }}>
+<div style={{ color: "#666", fontSize: "16" }}>
 {song.artist}
 </div>
 {song.tags?.length > 0 && (
@@ -413,7 +414,7 @@ style={{
 background: "#e5e7eb",
 padding: "2px 6px",
 borderRadius: "999px",
-fontSize: "12px",
+fontSize: "16",
 }}
 >
 #{tag}
@@ -484,7 +485,7 @@ alignItems: "center",
 style={{
 background: "#fff",
 padding: "16px",
-borderRadius: "12px",
+borderRadius: "16",
 width: "320px",
 }}
 >
@@ -506,7 +507,7 @@ style={{ width: "100%", marginBottom: "8px" }}
 placeholder="アーティスト名"
 value={artist}
 onChange={(e) => setArtist(e.target.value)}
-style={{ width: "100%", marginBottom: "12px" }}
+style={{ width: "100%", marginBottom: "16" }}
 />
 <input
 placeholder="タグ（カンマ区切り）"
@@ -514,7 +515,7 @@ value={tags}
 onChange={(e) => setTags(e.target.value)}
 style={{
 width: "100%",
-marginBottom: "12px",
+marginBottom: "16",
 }}
 />
 
