@@ -276,6 +276,7 @@ padding: "10px",
 marginBottom: "16px",
 border: "1px solid #ddd",
 borderRadius: "1px",
+fontSize: "16px",
 }}
 />
 {searchText.trim() !== "" && (
@@ -500,7 +501,12 @@ width: "320px",
 placeholder="曲名"
 value={title}
 onChange={(e) => setTitle(e.target.value)}
-style={{ width: "100%", marginBottom: "8px" }}
+style={{
+  width: "100%",
+  boxSizing: "border-box",
+  fontSize: "16px",
+  marginBottom: "8px",
+}}
 />
 
 <input
