@@ -137,11 +137,11 @@ cursor: "pointer",
 background: "#fff",
 border:
  isToday && isSelected
- ? "4px solid #7c3aed"
+ ? "2px solid #7c3aed"
  : isToday
- ? "4px solid #ef4444"
+ ? "2px solid #ef4444"
  : isSelected
- ? "4px solid #000000"
+ ? "2px solid #000000"
  : "1px solid #d1d5db",
 }}
 >
@@ -217,8 +217,8 @@ return (
 onTouchStart={handleTouchStart}
 onTouchEnd={handleTouchEnd}
 style={{
-padding: "16px",
-maxWidth: "1200px",
+padding: "8px",
+maxWidth: "100%",
 margin: "0 auto",
 touchAction: "pan-y",
 }}
@@ -274,7 +274,7 @@ width: "100%",
 padding: "10px",
 marginBottom: "16px",
 border: "1px solid #ddd",
-borderRadius: "8px",
+borderRadius: "1px",
 }}
 />
 {searchText.trim() !== "" && (
@@ -282,7 +282,7 @@ borderRadius: "8px",
 style={{
 marginBottom: "24px",
 border: "1px solid #ddd",
-borderRadius: "8px",
+borderRadius: "1px",
 padding: "16px",
 }}
 >
@@ -344,7 +344,7 @@ fontSize: "12px",
 style={{
 display: "grid",
 gridTemplateColumns: "repeat(7, minmax(0, 1fr))",
-gap: "8px",
+gap: "1px",
 textAlign: "center",
 fontWeight: "bold",
 marginBottom: "8px",
@@ -363,7 +363,7 @@ marginBottom: "8px",
 style={{
 display: "grid",
 gridTemplateColumns: "repeat(7, minmax(0, 1fr))",
-gap: "8px",
+gap: "1px",
 }}
 >
 {cells}
