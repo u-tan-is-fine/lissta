@@ -107,7 +107,7 @@ for (let i = 0; i < firstDay; i++) {
 cells.push(
 <div
 key={`empty-${i}`}
-style={{ minHeight: "160px", visibility: "hidden" }}
+style={{ minHeight: "80px", visibility: "hidden" }}
 />
 );
 }
@@ -129,8 +129,9 @@ cells.push(
 key={day}
 onClick={() => setSelectedDate(dateString)}
 style={{
-minHeight: "160px",
-padding: "8px",
+aspectRatio: "1",
+minHeight: "80px",
+padding: "4px",
 borderRadius: "8px",
 cursor: "pointer",
 background: "#fff",
@@ -337,8 +338,8 @@ fontSize: "12px",
 </div>
 )}
 
-<div style={{ overflowX: "auto" }}>
-<div style={{ minWidth: "900px" }}>
+<div>
+  <div style={{ width: "100%" }}>
 <div
 style={{
 display: "grid",
