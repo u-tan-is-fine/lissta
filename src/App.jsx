@@ -142,7 +142,7 @@ boxShadow:
     : isToday
     ? "inset 0 0 0 4px #ef4444"
     : isSelected
-    ? "inset 0 0 0 3px #000000"
+    ? "inset 0 0 0 1px #000000"
     : "none",
 }}
 >
