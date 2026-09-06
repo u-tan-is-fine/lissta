@@ -136,15 +136,14 @@ borderRadius: "2px",
 cursor: "pointer",
 background: "#fff",
 border: "1px solid #d1d5db",
-outline:
+boxShadow:
   isToday && isSelected
-    ? "2px solid #7c3aed"
+    ? "inset 0 0 0 3px #7c3aed"
     : isToday
-    ? "2px solid #ef4444"
+    ? "inset 0 0 0 3px #ef4444"
     : isSelected
-    ? "4px solid #000000"
+    ? "inset 0 0 0 2px #000000"
     : "none",
-outlineOffset: "-1px",
 }}
 >
 <div
