@@ -484,10 +484,11 @@ alignItems: "center",
 >
 <div
 style={{
-background: "#fff",
-padding: "16px",
-borderRadius: "16px",
-width: "320px",
+  background: "#fff",
+  padding: "16px",
+  borderRadius: "16px",
+  width: "90%",
+  maxWidth: "420px",
 }}
 >
 <h2>
@@ -504,8 +505,9 @@ onChange={(e) => setTitle(e.target.value)}
 style={{
   width: "100%",
   boxSizing: "border-box",
-  fontSize: "16px",
-  marginBottom: "8px",
+  fontSize: "18px",
+  padding: "12px",
+  marginBottom: "12px",
 }}
 />
 
@@ -513,22 +515,36 @@ style={{
 placeholder="アーティスト名"
 value={artist}
 onChange={(e) => setArtist(e.target.value)}
-style={{ width: "100%", marginBottom: "16px" }}
+style={{
+  width: "100%",
+  boxSizing: "border-box",
+  fontSize: "18px",
+  padding: "12px",
+  marginBottom: "12px",
+}}
 />
 <input
 placeholder="タグ（カンマ区切り）"
 value={tags}
 onChange={(e) => setTags(e.target.value)}
 style={{
-width: "100%",
-marginBottom: "16px",
+  width: "100%",
+  boxSizing: "border-box",
+  fontSize: "18px",
+  padding: "12px",
+  marginBottom: "16px",
 }}
 />
 
 <div style={{ display: "flex", gap: "8px" }}>
 <button
 onClick={editingId ? saveSong : addSong}
-style={{ flex: 1 }}
+style={{
+  flex: 1,
+  padding: "14px",
+  fontSize: "18px",
+  fontWeight: "bold",
+}}
 >
 {editingId ? "保存" : "登録"}
 </button>
@@ -536,7 +552,11 @@ style={{ flex: 1 }}
 
 <button
 onClick={() => setShowModal(false)}
-style={{ flex: 1 }}
+style={{
+  flex: 1,
+  padding: "14px",
+  fontSize: "18px",
+}}
 >
 閉じる
 </button>
