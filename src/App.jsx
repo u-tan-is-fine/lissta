@@ -218,7 +218,7 @@ onTouchStart={handleTouchStart}
 onTouchEnd={handleTouchEnd}
 style={{
 padding: "8px",
-maxWidth: "100%",
+Width: "100%",
 margin: "0 auto",
 touchAction: "pan-y",
 }}
